@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ConsoleApp1Test
+namespace Test
 {
     [TestClass]
     public class UnitTest1
@@ -8,10 +8,11 @@ namespace ConsoleApp1Test
         [TestMethod]
         public void TestMethod1()
         {
-            int a = 5;
-            int b = 6;
-            int result = ConsoleApp1.Program.Example(a, b);
-            Assert.AreEqual(11, result);
+
+            Assert.AreEqual(NumbReverseNet50.NumbReverse.Reverse(123), 321);
+            Assert.AreEqual(NumbReverseNet50.NumbReverse.Reverse(567), 765);
+            Assert.AreEqual(NumbReverseNet50.NumbReverse.Reverse(321), 123);
+
         }
     }
 }
